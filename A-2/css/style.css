@@ -1,0 +1,32 @@
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {color: #333; text-decoration: none;}
+ 
+.clearfix::before, .clearfix::after {display:block; content: ''; clear:both; }
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+#header {}
+#header .logo {float: left; width: 250px; height: 100px; background-color:aqua;}
+
+#header .nav {float: right; width: 600px; margin-top: 28px; background-color:red;}
+#header .nav li {position: relative; float:left; width: 25%; text-align: center;}
+#header .nav li a {display:block; padding: 10px; font-size: 20px; color: #fff;}
+#header .nav li a:hover {background-color: rgba(0,0,0,0.4);}
+#header .nav li ul.submenu {position: absolute; display:none; left: 0; top: 44px; background-color: orange;}
+#header .nav li ul.submenu li {width:100%;}
+#header .nav li ul.submenu li a {}
+
+
+#banner {float: left; width: 1200px; height: 300px; background-color:green;}
+
+#contents {}
+#contents > div.cont1 {float:left; width: 400px; height: 200px; background-color:orange;}
+#contents > div.cont2 {float:left; width: 400px; height: 200px; background-color:darkblue;}
+#contents > div.cont3 {float:left; width: 400px; height: 200px; background-color:darkgray;}
+
+#footer {}
+#footer > div.foot1 {float:left; width:200px; height: 100px; background-color:aqua}
+#footer > div.foot2 {float:left; width:800px; height: 100px; background-color:blueviolet}
+#footer > div.foot3 {float:left; width:200px; height: 100px; background-color: aquamarine;}

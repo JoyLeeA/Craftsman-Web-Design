@@ -1,0 +1,63 @@
+/* reset */
+@charset "UTF-8";
+* {margin: 0; padding: 0; font-size: 20px; }
+li {list-style: none;}
+a {color: #333; text-decoration: none;}
+.clearfix::before, .clearfix::after {display:block; content:''; clear: both;}
+
+/* wapper */
+#wrapper {width: 1200px; height:700px; margin: 0 auto; background-color: beige;}
+
+/* header */
+#header {}
+#header .logo {position: relative; float:left; width: 250px; height:100px;}
+#header .logo img {position:absolute; left: 50%; top:50%; transform: translate(-50%, -50%)}
+
+#header .nav {float:right; width: 600px; margin-top: 30px; background-color: peru;}
+#header .nav li {width:25%; float:left; text-align: center; position:relative;}
+#header .nav li a {display:block; padding: 10px; font-size: 20px; color: white; font-weight: bold}
+#header .nav li a:hover {background-color: rgba(0,0,0,0.4);}
+#header .nav li ul.submenu {position:absolute; display: none; left: 0; background-color: peachpuff; z-index: 100;}
+#header .nav li ul.submenu a {color: black;}
+#header .nav li ul.submenu li {width:100%;}
+
+
+/* banner */
+#banner {float:left; width:1200px; height: 300px; overflow: hidden;}
+
+/* slider */
+.slideList {position: relative; width: 1200px; height: 300px;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+.slideList .slideImg img {display: block;}
+
+/* contents */
+#contents {}
+#contents > div.cont1 {float: left; width: 400px; height: 200px;}
+#contents > div.cont2 {float: left; width: 400px; height: 200px;}
+#contents > div.cont3 {float: left; width: 400px; height: 200px;}
+
+/* tab-menu */
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn {}
+.tab-menu .tab-btn  ul {}
+.tab-menu .tab-btn  li {float:left; width: 160px; float: left; width: 160px; text-align: center; background-color: peru;}
+.tab-menu .tab-btn li.active {text-decoration: underline;}
+.tab-menu .tab-btn li a {color:white; padding: 10px; display: block; }
+.tab-menu .tab-cont {background-color: peachpuff; text-align: left; padding: 10px;}
+.tab-menu .tab-cont .noticeList a {float:left ;}
+.tab-menu .tab-cont .noticeList span {float:right;}
+.tab-menu .tab-cont .galeryList {}
+.tab-menu .tab-cont .galeryList .galeryImg img {float:left; width: 100px; padding: 10px; }
+
+/* footer */
+#footer {}
+#footer .foot1 {float: left; width: 200px; height: 100px;}
+#footer .foot2 {float: left; width: 800px; height: 100px;}
+#footer .foot3 {float: left; width: 200px; height: 100px;}
+
+#footer .foot1 img {margin-top: 25px; margin-left: 20px;}
+#footer .foot2 img {margin-left: 200px;}
+#footer .foot3 img {float:left; margin-right: 2px; margin-top: 18px; border: 1px solid;}
+
+

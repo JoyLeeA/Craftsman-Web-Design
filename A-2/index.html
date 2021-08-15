@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <h3 class="logo">로고</h3>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">Menu-1</a>
+                            <ul class="submenu">
+                                <li><a href="#">subMenu-1</a></li>
+                                <li><a href="#">subMenu-2</a></li>
+                                <li><a href="#">subMenu-3</a></li>
+                                <li><a href="#">subMenu-4</a></li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <a href="#">Menu-2</a>
+                            <ul class="submenu">
+                                <li><a href="#">subMenu-1</a></li>
+                                <li><a href="#">subMenu-2</a></li>
+                                <li><a href="#">subMenu-3</a></li>
+                                <li><a href="#">subMenu-4</a></li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <a href="#">Menu-3</a>
+                            <ul class="submenu">
+                                <li><a href="#">subMenu-1</a></li>
+                                <li><a href="#">subMenu-2</a></li>
+                                <li><a href="#">subMenu-3</a></li>
+                                <li><a href="#">subMenu-4</a></li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <a href="#">Menu-4</a>
+                            <ul class="submenu">
+                                <li><a href="#">subMenu-1</a></li>
+                                <li><a href="#">subMenu-2</a></li>
+                                <li><a href="#">subMenu-3</a></li>
+                                <li><a href="#">subMenu-4</a></li>
+                            </ul>    
+                        </li>                                                                        
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="banner">
+                <h2>배너</h2>
+            </section>
+            
+            <section id="contents" class="cleafix">
+                <div class="cont1">
+                    <h3>공지사항</h3>
+                    <div>콘텐츠 영역</div>
+                </div>
+                <div class="cont2"><h3> 갤러리 </h3></div>
+                <div class="cont3"><h3> 배너 </h3></div>
+            </section>
+
+            <footer id="footer" class="clearfix">
+                <div class="foot1"><h3>로고</h3></div>
+                <div class="foot2"><h3>Copyright</h3></div>
+                <div class="foot3"><h3>패밀리사이트</h3></div>
+            </footer>
+        </div>
+        <script src="./script/jquery-3.6.0.min.js"></script>
+        <script>
+            $(".nav > ul > li").mouseover(function(){
+                $(".nav > ul > li > ul.submenu").stop().slideDown(200)
+            });
+            
+            $(".nav > ul > li").mouseleave(function(){
+                $(".nav > ul > li > ul.submenu").stop().slideUp(200)
+            });
+        </script>
+    </body>
+</html>
