@@ -3,81 +3,145 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./script/jquery-3.6.0.min.js"></script>
+        <script src="script/script.js"></script>
     </head>
     <body>
         <div id="wrap">
             <header id="header">
-                <h3 class="logo">로고</h3>
+                <h3 class="logo">
+                    <a href="#"><img src="images/logo-1.png" alt="로고"></a>
+                </h3>
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a href="#">Menu-1</a>
+                            <a href="#">재단소개</a>
                             <ul class="submenu">
-                                <li><a href="#">subMenu-1</a></li>
-                                <li><a href="#">subMenu-2</a></li>
-                                <li><a href="#">subMenu-3</a></li>
-                                <li><a href="#">subMenu-4</a></li>
+                                <li><a href="#">설립취지</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
                             </ul>    
                         </li>
                         <li>
-                            <a href="#">Menu-2</a>
+                            <a href="#">후원하기</a>
                             <ul class="submenu">
-                                <li><a href="#">subMenu-1</a></li>
-                                <li><a href="#">subMenu-2</a></li>
-                                <li><a href="#">subMenu-3</a></li>
-                                <li><a href="#">subMenu-4</a></li>
+                                <li><a href="#">국내후원</a></li>
+                                <li><a href="#">국외후원</a></li>
+                                <li><a href="#">맞춤후원</a></li>
                             </ul>    
                         </li>
                         <li>
-                            <a href="#">Menu-3</a>
+                            <a href="#">자료실</a>
                             <ul class="submenu">
-                                <li><a href="#">subMenu-1</a></li>
-                                <li><a href="#">subMenu-2</a></li>
-                                <li><a href="#">subMenu-3</a></li>
-                                <li><a href="#">subMenu-4</a></li>
+                                <li><a href="#">서식자료실</a></li>
+                                <li><a href="#">사진자료실</a></li>
+                                <li><a href="#">후원양식</a></li>
                             </ul>    
                         </li>
                         <li>
-                            <a href="#">Menu-4</a>
+                            <a href="#">스토리</a>
                             <ul class="submenu">
-                                <li><a href="#">subMenu-1</a></li>
-                                <li><a href="#">subMenu-2</a></li>
-                                <li><a href="#">subMenu-3</a></li>
-                                <li><a href="#">subMenu-4</a></li>
+                                <li><a href="#">웹진</a></li>
+                                <li><a href="#">보고서</a></li>
+                                <li><a href="#">나의 후원</a></li>
                             </ul>    
-                        </li>                                                                        
+                        </li>
                     </ul>
                 </nav>
             </header>
 
             <section id="banner">
-                <h2>배너</h2>
+                <div class="slideList">
+                    <div class="slideImg">
+                        <h2>Green 복지재단 홈페이지에 오신것을 환영합니다.</h2>
+                        <img src="images/slide1.jpg" alt="슬라이드1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>봉사 신청 바로 가기</h2>
+                        <img src="images/slide2.jpg" alt="슬라이드2">
+                    </div>
+                    <div class="slideImg">
+                        <h2>더 행복한 사회를 만들어 나갑시다!</h2> 
+                        <img src="images/slide3.jpg" alt="슬라이드3">
+                    </div>                                        
+                </div>
             </section>
             
             <section id="contents" class="cleafix">
                 <div class="cont1">
-                    <h3>공지사항</h3>
-                    <div>콘텐츠 영역</div>
+                    <div class="tab-menu">
+                        <div class="tab-btn clearfix">
+                            <h2>공지사항</h2>
+                        </div>
+                        <div class="tab-cont">
+                            <div class="clearfix">
+                                <div class="content popup">
+                                    <h4><a href="#">교실에서 찾은 희망 참여 안내</a></h4>
+                                    <p>2021-08-16</p>
+                                </div>
+                                <div class="content">
+                                    <h4><a href="#">말라위 홍수 안내</a></h4>
+                                    <p>2021-08-17</p>
+                                </div>
+                                <div class="content">
+                                    <h4><a href="#">시리아 내전 발생 8주년</a></h4>
+                                    <p>2021-08-18</p>
+                                </div>
+                                <div class="content">
+                                    <h4><a href="#">무더운 밤에 봉사하자</a></h4>
+                                    <p>2021-08-19</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cont2"><h3> 갤러리 </h3></div>
-                <div class="cont3"><h3> 배너 </h3></div>
+                <div class="cont2">
+                    <div class="clearfix galery">
+                        <div class="galery-btn">
+                            <h2>갤러리</h2>
+                        </div>
+                        <div class="galery-cont">
+                            <img src="images/galery1.jpg" alt="갤러리1">
+                            <img src="images/galery2.jpg" alt="갤러리2">
+                            <img src="images/galery3.jpg" alt="갤러리3">
+                        </div>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <img src="images/banner.jpg" alt="배너">
+                </div>
             </section>
 
             <footer id="footer" class="clearfix">
-                <div class="foot1"><h3>로고</h3></div>
-                <div class="foot2"><h3>Copyright</h3></div>
-                <div class="foot3"><h3>패밀리사이트</h3></div>
+                <div class="foot1">
+                    <a href="#"><img src="images/logo-2.png" alt="로고"></a>
+                </div>
+                <div class="foot2">
+                   <div class="copyright">
+                    <p>서울특별시 은평구 진관4로 107(진관동)</p>
+                    <p>전화: 02-4321-8532 / 팩스: 02-4321-9823</p>
+                    <p>copyright © GREEN복지재단. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="foot3">
+                    <form action="#">
+                        <select>
+                            <option value=#>패밀리사이트</option>
+                            <option value=#>빨강 복지재단</option>
+                            <option value=#>블루 복지재단</option>
+                            <option value=#>누리끼리 복지센터</option>
+                        </select>
+                        <button>이동</button>
+                    </form>
+                </div>
             </footer>
         </div>
-        <script src="./script/jquery-3.6.0.min.js"></script>
-        <script>
-            $(".nav > ul > li").mouseover(function(){
-                $(".nav > ul > li > ul.submenu").stop().slideDown(200)
-            });
-            
-            $(".nav > ul > li").mouseleave(function(){
-                $(".nav > ul > li > ul.submenu").stop().slideUp(200)
-            });
-        </script>
+        <div class="layer-bg"></div>
+        <div class="layer">
+            <h2>타이틀</h2>
+            <hr>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <button class="close">닫기</button>
+        </div>
     </body>
 </html>

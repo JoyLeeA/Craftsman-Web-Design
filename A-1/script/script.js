@@ -39,4 +39,13 @@ $(document).ready(function(){
         tabCont.eq(index).css("display", "block");
     });
     
+//Layer Popup
+    $(".popup").click(function(){
+        $(".layer").css("display", "block");
+        $(".layer-bg").css("display", "block");
+    });
+    $(".close").click(function(){
+        $(".layer").css("display", "none");
+        $(".layer-bg").css("display", "none");
+    });
 });

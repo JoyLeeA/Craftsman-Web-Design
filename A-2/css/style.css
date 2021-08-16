@@ -1,32 +1,59 @@
+@charset "utf-8";
 /* reset */
 * {margin: 0; padding: 0;}
 li {list-style: none;}
 a {color: #333; text-decoration: none;}
- 
-.clearfix::before, .clearfix::after {display:block; content: ''; clear:both; }
+.clearfix::before, .clearfix::after {display:block; content: ''; clear:both;}
 
-#wrap {width: 1200px; margin: 0 auto;}
+#wrap {width: 1200px; margin: 0 auto; background-color: beige;}
 
 #header {}
-#header .logo {float: left; width: 250px; height: 100px; background-color:aqua;}
+#header .logo {float: left; width: 250px; height: 100px;}
+#header .logo img {padding: 0 15px;}
 
-#header .nav {float: right; width: 600px; margin-top: 28px; background-color:red;}
-#header .nav li {position: relative; float:left; width: 25%; text-align: center;}
-#header .nav li a {display:block; padding: 10px; font-size: 20px; color: #fff;}
+#header .nav {float: right; width: 600px; margin-top: 28px; background-color:peru;}
+#header .nav li {position: relative; float:left; width: 25%; text-align: center; z-index: 500;}
+#header .nav li a {display:block; padding: 10px; font-size: 20px; color: #000;}
+#header .nav > ul> li > a {font-weight: bold;}
 #header .nav li a:hover {background-color: rgba(0,0,0,0.4);}
-#header .nav li ul.submenu {position: absolute; display:none; left: 0; top: 44px; background-color: orange;}
+#header .nav li ul.submenu {position: absolute; display:none; left: 0; top: 44px; background-color: peachpuff;}
 #header .nav li ul.submenu li {width:100%;}
 #header .nav li ul.submenu li a {}
 
 
-#banner {float: left; width: 1200px; height: 300px; background-color:green;}
+#banner {float: left; width: 1200px; height: 300px; overflow: hidden;}
+.slideList {position: relative; width: 3600px; height: 300px;}
+.slideImg {position: relative; float: left; width: 1200px; height: 300px; }
+.slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+.slideImg img {display: block;}
 
 #contents {}
-#contents > div.cont1 {float:left; width: 400px; height: 200px; background-color:orange;}
-#contents > div.cont2 {float:left; width: 400px; height: 200px; background-color:darkblue;}
+#contents > div.cont1 {float:left; width: 400px; height: 200px;}
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn h2 {width: 160px; background: peru; text-align: center; color: #fff; padding: 10px; display: block; }
+.tab-menu .tab-cont {background-color: peachpuff; text-align: left; padding: 20px;}
+.tab-menu .tab-cont .content {padding: 0px 15px;}
+.tab-menu .tab-cont .content h4 {float: left; font-size: 16px;}
+.tab-menu .tab-cont .content p {float: right;}
+
+#contents > div.cont2 {float:left; width: 400px; height: 200px;}
+.galery {padding: 10px;}
+.galery-btn h2 {width: 160px; background: peru; text-align: center; color: #fff; padding: 10px; display: block;}
+.galery-cont img {padding:5px 0;}
+
 #contents > div.cont3 {float:left; width: 400px; height: 200px; background-color:darkgray;}
 
 #footer {}
-#footer > div.foot1 {float:left; width:200px; height: 100px; background-color:aqua}
-#footer > div.foot2 {float:left; width:800px; height: 100px; background-color:blueviolet}
-#footer > div.foot3 {float:left; width:200px; height: 100px; background-color: aquamarine;}
+#footer > div.foot1 {float:left; width:200px; height: 100px;}
+#footer > div.foot1 img {padding: 0 15px;}
+#footer > div.foot2 {float:left; width:800px; height: 100px; position: relative;}
+#footer > div.foot2 .copyright {position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%)}
+#footer > div.foot2 p {font-size: 15px;}
+#footer > div.foot3 {float:left; width:200px; height: 100px;}
+#footer > div.foot3 form {float:right; margin:40px 10px}
+
+.layer-bg {width: 100%; height:100%; background: rgba(0,0,0,0.6); position: absolute; left: 0; top: 0; z-index: 500; display: none;}
+.layer {width: 500px; height: 500px; background-color: #fff; border: 2px solid #000; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin-top: -300px; display: none; z-index: 1000;}
+.layer h2 {padding: 20px; color: #000;}
+.layer p {padding: 15px}
+.layer .close {position: absolute; right: 20px; bottom: 20px;}
