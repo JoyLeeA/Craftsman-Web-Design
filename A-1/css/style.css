@@ -28,7 +28,7 @@ a {color: #333; text-decoration: none;}
 /* slider */
 .slideList {position: relative; width: 1200px; height: 300px;}
 .slideList .slideImg {position: relative;}
-.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #000; background-color: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
 .slideList .slideImg img {display: block;}
 
 /* contents */
@@ -40,8 +40,8 @@ a {color: #333; text-decoration: none;}
 /* tab-menu */
 .tab-menu {padding: 10px;}
 .tab-menu .tab-btn {}
-.tab-menu .tab-btn  ul {}
-.tab-menu .tab-btn  li {float:left; width: 160px; float: left; width: 160px; text-align: center; background-color: peru;}
+.tab-menu .tab-btn ul {}
+.tab-menu .tab-btn li {float:left; width: 160px; text-align: center; background-color: peru;}
 .tab-menu .tab-btn li.active {text-decoration: underline;}
 .tab-menu .tab-btn li a {color:white; padding: 10px; display: block; }
 .tab-menu .tab-cont {background-color: peachpuff; text-align: left; padding: 10px;}
