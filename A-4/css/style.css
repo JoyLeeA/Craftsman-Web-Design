@@ -16,7 +16,7 @@ li {list-style: none;}
 
 /* GNB */
 #header .nav {float: right; width: 600px; margin-top: 60px; margin-right:30px; background-color: peru;}
-.nav ul li {float:left; position: relative; width: 25%; text-align: center;}
+.nav ul li {float:left; position: relative; width: 25%; text-align: center; z-index: 500;}
 .nav ul li a {display: block; padding: 10px;}
 .nav ul li a:hover {background-color: rgba(0,0,0,0.5);}
 .nav ul li ul.submenu {position: absolute; display:none;}
@@ -32,9 +32,28 @@ li {list-style: none;}
 
 /* banner */
 #banner {width: 1200px; height: 200px;}
-#banner .notice {float:left; width:33.3333%; height: 200px; background-color: #555}
-#banner .galery {float:left; width:33.3333%; height: 200px; background-color: #444}
-#banner .baro {float:left; width:33.3333%; height: 200px; background-color: #333}
+
+/* notice */
+#banner .notice {float:left; width:33.3333%; height: 200px;}
+#banner .notice .notice-btn {width: 100px; margin: 0px 20px;padding: 10px; text-align: center; background-color: peru; margin-top: 10px;}
+#banner .notice .notice-cont {width: 380px; background-color: peachpuff; margin: 0 auto;}
+#banner .notice .notice-cont .notice-list {padding: 4px;}
+#banner .notice .notice-cont .notice-list h4 {float: left; font-weight: normal; color: #000; font-size: 13px;}
+#banner .notice .notice-cont .notice-list p {float: right; color: #000; font-size: 12px; width: 70px}
+
+/* galery */
+#banner .galery {float:left; width:33.3333%; height: 200px;}
+#banner .galery .galery-btn {width: 100px; margin: 0px 20px;padding: 10px; text-align: center; background-color: peru; margin-top: 10px;}
+#banner .galery .galeryList {width: 380px; height:145px; background-color: peachpuff; margin: 0 auto;}
+#banner .galery .galeryList img {float: left; display: blcok; width: 110px; padding: 16px 8px 8px 8px;}
+#banner .galery .galeryList img:hover {opacity:0.5;}
+
+
+
+#banner .baro {float:left; width:33.3333%; height: 200px;}
+#banner .baro li {float: left; width: 120px; text-align: center; padding: 5px; margin-top: 40px;}
+#banner .baro ul img {width: 100px; height: 100px; display: block;}
+#banner .baro ul h4 {color: #000;}
 
 /* footer */
 #footer {width: 1200px; height: 100px;}
@@ -42,3 +61,17 @@ li {list-style: none;}
 #footer .foot1 .bottom-menu {width: 100%; height: 50%; background-color: aqua;}
 #footer .foot1 .copyright {width: 100%; height: 50%; background-color: red;}
 #footer .foot2 {float: left; width: 200px; height: 100px; background-color: #111;}
+
+.layer-bg {position: absolute; background-color: rgba(0,0,0,0.5); left: 0; top: 0; width: 100%; height: 100%; z-index: 500; display: none;}
+.layer {position: relative; width:500px; height: 500px; border: solid 1px; left: 50%; top: 50%; transform: translate(-50%, -120%); background-color: rgba(255,255,255); display: none; z-index: 1000;}
+.layer h2 {padding: 15px; font-size: 20px}
+.layer p {padding: 50px 11px; text-align: left;}
+.layer .close {position: absolute; bottom: 20px; right:20px;}
+.layer .close a {color: black;}
+
+
+
+
+
+
+

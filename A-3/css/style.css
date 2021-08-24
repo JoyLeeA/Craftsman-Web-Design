@@ -57,7 +57,7 @@ a {text-decoration: none;}
 #footer .foot2 .copyright p {text-align: center;}
 
 /* layer popup */
-.layer-bg {position: absolute; 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index:500; display: none;}
+.layer-bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index:500; display: none;}
 .layer {position:absolute; width: 500px; height: 500px; background: #fff; border: 2px solid #000; left: 50%; top: 50%; transform: translate(-50%, -100%); z-index: 1000; display: none;}
 .layer h2 {padding: 20px;}
 .layer p {padding: 15px;}

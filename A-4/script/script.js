@@ -17,15 +17,23 @@ $(document).ready(function(){
         $(".slideList").find(".slideImg").eq(current).stop().fadeOut();
         $(".slideList").find(".slideImg").eq(next).stop().fadeIn();
         current = next;
+        
     }, 3000);
 
                   
                   
+    //Layer-Popup
+    $(".popup").click(function(e){
+        e.preventDefault;
+        $(".layer").css("display", "block");
+        $(".layer-bg").css("display", "block");
+    }); 
+    
+    $(".close").click(function(e){
+        e.preventDefault;
+        $(".layer").css("display", "none");
+        $(".layer-bg").css("display", "none");
+    });
                   
-                  
-                  
-                  
-                  
-                  
-                  
+                            
 });
