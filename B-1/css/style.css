@@ -1,0 +1,30 @@
+/* init */
+@charset "utf-8";
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {display: block; content: '', clear: both;}
+
+/* wrap */
+#wrap {width:1200px; height:500px; margin: 0 auto; background-color:#888;}
+
+/* sub-wrap */
+.sub-wrap {width: 100%; height: 100px; background-color: #999;}
+#header {width: 1200px; height: 100px; margin: 0 auto;}
+#header .logo {float: left; width: 200px; height: 100px; background-color: #777;}
+#header .nav {float:left; width: 1000px; height: 100px; background-color: #666;}
+
+/* slide */
+.slide {width:1200px; height:300px; background-color: #555;}
+
+/* tab-menu */
+.content .tab-menu {float: left; width:33.3333%; height: 200px; background: #444;}
+.content .banner {float: left; width:33.3333%; height: 200px; background: #333;}
+.content .baro {float: left; width:33.3333%; height: 200px; background: #222;}
+
+/* footer */
+#footer {width: 1200px; height: 100px;  margin: 0 auto; background-color: aqua;}
+#footer .foot1 {float: left; width: 200px; height: 100px; background-color: red;}
+#footer .foot2 {float: left; width: 1000px; height: 100px; background-color: blue;}
+#footer .foot2 .bottom-menu {width; 100%; height: 50%; background-color: aliceblue;}
+#footer .foot2 .copyright {width: 100%; height: 50%; background-color: antiquewhite;}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+.clearfix::before, .clearfix::after {display: block; content:''; clear: both;}
+
+/* sub-wrap */
+.sub-wrap {width: 100%; height: 100px; background-color: #999;}
+#header {width: 1200px; height: 100px; margin: 0 auto;}
+#header .logo {float: left; width: 200px; height: 100px; background-color: #777;}
+#header .nav {float: left; width: 1000px; height: 100px; background-color: #666;}
+
+#wrap {width: 1200px; height: 500px; margin: 0 auto; background: #888;}
+.slide {width; 1200px; height: 300px; background-color: #555;}
+.contents {width:1200px; height: 200px; background-color: #444;}
+.contents .notice {float: left; width:33.3333%; height: 200px; background-color: #333;}
+.contents .galery {float: left; width:33.3333%; height: 200px; background-color: #222;}
+.contents .baro {float: left; width:33.3333%; height: 200px; background-color: #111;}
+
+#footer {width: 1200px; height: 100px; margin: 0 auto; background-color: red;}
+#footer .foot1 {float: left; width: 1000px; height: 100px; background-color: azure;}
+#footer .foot2 {float: left; width: 200px; height: 100px; background-color: aliceblue;}
+#footer .foot2 .sns {width: 100%; height: 50%; background-color: beige;}
+#footer .foot2 .family {width: 100%; height: 50%; background-color: rebeccapurple;}
+
+.layer-bg {position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color:rgba(0,0,0,0.5); display: none; z-index: 500;}
