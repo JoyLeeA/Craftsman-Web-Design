@@ -15,7 +15,7 @@ $(document).ready(function(){
         if (currentIndex < 2) {
             currentIndex++;
         } else {
-            currentIndex = 0
+            currentIndex = 0;
         }
         
         var slidePosition = currentIndex * (-300)+"px"

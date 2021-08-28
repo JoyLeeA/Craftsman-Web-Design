@@ -1,0 +1,55 @@
+/* init */
+@charset "utf-8";
+* {margin:0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #000;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;} 
+
+/* wrap */
+.sub-wrap {width: 100%; height: 100px; background-color: #999;}
+.wrap {width: 1200px; height: 500px; background-color: #888; margin: 0 auto;}
+
+/* header */
+#header {width: 1200px; height: 100px; margin: 0 auto; background-color: #888;}
+#header .logo {float:left; width: 200px; height:100px; background-color: #777;}
+
+/* GNB */
+#header .nav {float:right; width: 600px; margin-top: 56px; margin-right: 40px; font-weight: bold;}
+.nav ul li {float: left; width:25%; text-align: center; background-color: peru; position: relative;}
+.nav ul li a {display: block; padding: 10px; font-size: 18px;}
+.nav ul li a:hover {background-color: rgba(255,255,255,0.5);}
+.nav ul li ul.submenu {height: 180px; background-color: peachpuff; z-index: 10; display: none; position: absolute;}
+.nav ul li ul.submenu li {width: 100%; font-weight: normal; background-color: peachpuff;}
+
+/* slide */
+#slide {width: 1200px; height: 300px; overflow: hidden;}
+.slideList {position: relative; width: 3600px; height: 300px;}
+.slideList .slideImg {position: relative; float: left;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top:50%; transform: translate(-50%, -50%); border-radius: 20px; padding: 20px; background-color: rgba(255, 255,255, 0.4)}
+.slideList .slideImg img {display: block;}
+
+
+
+
+
+
+
+
+#contents {width: 1200px; height: 200px; background-color: #555;}
+#contents .notice {float: left; width: 33.3333%; height: 200px; background-color: antiquewhite;}
+#contents .galery {float: left; width: 33.3333%; height: 200px; background-color: red;}
+#contents .banner {float: left; width: 33.3333%; height: 200px; background-color: blue;}
+
+#footer {width: 1200px; height: 100px; margin: 0 auto; background-color: #888;}
+#footer .foot1 {float: left; width: 1000px; height:100px; background-color: blueviolet}
+.foot1 .bottom-menu {width: 100%; height: 50%; background-color: #999;}
+.foot1 .copyright {width: 100%; height: 50%; background-color: black;}
+
+#footer .foot2 {float: left; width: 200px; height: 100px; background-color: darkgreen;}
+
+/* popup */
+.layer-bg {position: absolute; 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); display: none;}
+.layer {position: absolute; width: 500px; height: 500px; background-color: #fff; border: 2px solid; left: 50%; top: 50%; transform: translate(-50%, -110%); display: none;}
+.layer h2 {padding: 20px; text-align: center;}
+.layer p {padding: 10px; font-size: 20px;}
+.layer .close {position: absolute; right: 20px; bottom: 20px;}

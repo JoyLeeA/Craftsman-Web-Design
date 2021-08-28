@@ -22,6 +22,21 @@ $(document).ready(function(){
         tabBtn.removeClass("active");
         target.addClass("active");
         tabCont.hide().eq(index).show();
+    });
+    
+    //slide
+    var currentIndex = 0;
+    
+    setInterval(function(){
+        if (currentIndex < 2) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        
+        var slidePosition = currentIndex * (-300)+ "px" 
+        $(".slideList").animate({top: slidePosition}, 500);
+    }, 3000);
     
     //layer
     $(".popup").click(function(e){
@@ -29,12 +44,10 @@ $(document).ready(function(){
         $(".layer").css("display", "block");
         $(".layer-bg").css("display", "block");
     });
+        
     $(".close").click(function(e){
         e.preventDefault;
         $(".layer").css("display", "none");
         $(".layer-bg").css("display", "none");
     });        
-        
-        
-    });
 });

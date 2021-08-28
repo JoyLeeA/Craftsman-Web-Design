@@ -24,7 +24,7 @@ a {text-decoration: none;}
 #slide {width: 1200px; height:300px; overflow: hidden;}
 .slideList {}
 .slideList .slideImg {position: relative;}
-.slideList .slideImg h2 {position: absolute; left: 50%; top:50%; transform: translate(-50%, -50%); color: white; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5); padding: 10px 30px;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top:50%; transform: translate(-50%, -50%); color: white; border-radius: 25px; background-color: rgba(0, 0, 0, 0.5); padding: 10px 30px; text-align: center;}
 .slideList .slideImg img {display: block;}
 
 /* contents */
@@ -38,7 +38,7 @@ a {text-decoration: none;}
 .tab-menu .tab-btn li.active {text-decoration: underline;}
 .tab-menu .tab-cont {background-color: peachpuff; text-align: left; padding: 10px;}
 .tab-menu .tab-cont .notice {padding: 4px;}
-.tab-menu .tab-cont .notice .notice-left {float: left;}
+.tab-menu .tab-cont .notice .notice-left {float: left; font-size: 15px;}
 .tab-menu .tab-cont .notice .notice-right {float: right;}
 .tab-menu .tab-cont .galeryList {}
 .tab-menu .tab-cont .galeryList Img {float: left; padding: 3px;}
@@ -49,16 +49,17 @@ a {text-decoration: none;}
 /* footer */
 #footer {width: 1200px; height: 100px;}
 #footer .foot1 {float: left; width: 200px; height: 100px;}
+#footer .foot1 img {display: block;}
 #footer .foot2 {float: left; width: 1000px; height: 100px;}
 #footer .foot2 .lowerMenu {width: 100%; height: 50px;}
-#footer .foot2 .lowerMenu li {float: left; font-size: 20px; padding: 15px 20px 0px; font-weight: bold;}
+#footer .foot2 .lowerMenu li {float: left; font-size: 20px; padding: 10px 15px; margin-left: 3px; font-weight: bold;}
 #footer .foot2 .lowerMenu li.fix {padding-left: 190px;}
 #footer .foot2 .copyright {width: 100%; height: 50px;}
 #footer .foot2 .copyright p {text-align: center;}
 
 /* layer popup */
 .layer-bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index:500; display: none;}
-.layer {position:absolute; width: 500px; height: 500px; background: #fff; border: 2px solid #000; left: 50%; top: 50%; transform: translate(-50%, -100%); z-index: 1000; display: none;}
+.layer {position:absolute; width: 500px; height: 500px; background: #fff; border: 2px solid #000; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; display: none;}
 .layer h2 {padding: 20px;}
 .layer p {padding: 15px;}
 .layer .close {position: absolute; right: 20px; bottom: 20px;}
