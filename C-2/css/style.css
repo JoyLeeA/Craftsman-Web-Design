@@ -1,12 +1,24 @@
-@charset "utf-8";
+/* init */
+@charset "utf-8" ;
 * {margin: 0; padding: 0;}
 li {list-style: none;}
 a {color: #000; text-decoration: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
 
-.wrap {width: 1000px; height: 650px; background-color: #999;}
-#side {float:left; width: 200px; height:650px; background-color: #888;}
-#side .logo {width: 200px; height:100px; background-color: #777;}
+/* wrap */
+.wrap {width: 1000px; height: 650px; background-color: #ffffff; color: #333333;}
+#side {float:left; width: 200px; height:650px;}
+
+/* logo */
+#side .logo {width: 200px; height:100px; }
+.logo img {display: block; padding: 30px 0px;}
+
+/* GNB */
 #side .nav {width: 200px; height:550px; background-color: #666;}
+.nav ul li {text-align: center;}
+.nav ul li a {display: block; padding: 10px}
+.nav ul li a:hover {background-color: rgba(0,0,0,0.5);}
+.submenu {display: none;}
 
 #main {float: left; width: 800px; height:650px;}
 #main .slide {width: 800px; height: 350px; background-color: #444;}
