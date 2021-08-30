@@ -40,8 +40,8 @@ li {list-style: none;}
 .tab-btn ul li {float: left; font-weight: bold;}
 .tab-btn ul li a {display: block; padding: 10px}
 .tab-cont {width: 240px; height: 140px; background-color: peachpuff; padding: 10px;}
-.cont h4 {float: left; font-size: 13px;}
-.cont p {float: right; font-size: 10px;}
+.cont h4 {float: left; font-size: 12px;}
+.cont p {float: right; font-size: 8px;}
 .galleryList img {float: left; display: block;}
 
 #rightside .contents .cont2 {float: left; width:33.3333%; height: 200px; background-color: #444;}
