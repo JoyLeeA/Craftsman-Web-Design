@@ -1,26 +1,82 @@
+/* init */
 @charset "utf-8";
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none;}
+a {text-decoration: none; color: #333333;}
 .clearfix::before, .clearfix::after {display: block; content:''; clear: both;}
 
-/* sub-wrap */
-.sub-wrap {width: 100%; height: 100px; background-color: #999;}
-#header {width: 1200px; height: 100px; margin: 0 auto;}
-#header .logo {float: left; width: 200px; height: 100px; background-color: #777;}
-#header .nav {float: left; width: 1000px; height: 100px; background-color: #666;}
+/* wrap */
+#wrap {width: 1200px; height: 500px; margin: 0 auto; background: #ffffff; color: #333333;}
+.sub-wrap {width: 100%; height: 100px; background-color: #ffffff; color: #333333;}
 
-#wrap {width: 1200px; height: 500px; margin: 0 auto; background: #888;}
-.slide {width; 1200px; height: 300px; background-color: #555;}
-.contents {width:1200px; height: 200px; background-color: #444;}
-.contents .notice {float: left; width:33.3333%; height: 200px; background-color: #333;}
-.contents .galery {float: left; width:33.3333%; height: 200px; background-color: #222;}
-.contents .baro {float: left; width:33.3333%; height: 200px; background-color: #111;}
+/* header */
+#header {width: 1200px; height: 100px; margin: 0 auto; position:relative;}
+#header .logo {float: left; width: 200px; height: 100px;}
+#header .logo img {display: block; margin-top: 25px; z-index: 200; position: absolute}
 
-#footer {width: 1200px; height: 100px; margin: 0 auto; background-color: red;}
-#footer .foot1 {float: left; width: 1000px; height: 100px; background-color: azure;}
-#footer .foot2 {float: left; width: 200px; height: 100px; background-color: aliceblue;}
-#footer .foot2 .sns {width: 100%; height: 50%; background-color: beige;}
-#footer .foot2 .family {width: 100%; height: 50%; background-color: rebeccapurple;}
+/* 네비게이션 */
+#header .nav {position: absolute; float:right; width: 100%; margin-top: 60px;}
+#header .nav ul.mainmenu {padding-left: 40%;}
+.nav ul li {width: 25%; float: left; position: relative; text-align: center; font-size: 20px; font-weight: bold;}
+.nav ul li a {display: block; padding: 10px; background-color: peru;}
+.nav ul.mainmenu li a:hover {background-color: rgba(0,0,0,0.5); }
+.nav ul li ul.submenu {padding-left: 0; position: absolute; z-index: 100; height: 185px; background-color: peachpuff; left: 0; top: 40px; display: none;}
+.nav ul li ul.submenu li {width: 100%; font-weight: normal;}
+.nav ul li ul.submenu li a {background-color: peachpuff;}
+#header .nav ul li:first-child ul.submenu {content: ''; position: absolute; width: 1140px; height: 188px; background-color: peachpuff; left: -480px; }
+#header .nav ul li:first-child ul.submenu a.first:hover {background-color: rgba(0,0,0,0.5); margin-left: 480px; padding-left: 46px; text-align: left; }
+#header .nav ul li:first-child ul.submenu a:hover {background-color: rgba(0,0,0,0.5); margin-left: 480px; padding-left: 36px; text-align: left; }
 
+
+
+/* slide */
+.slide {width; 1200px; height: 300px; overflow: hidden;}
+.slideList {position: relative; width: 1200px; height: 300px;}
+.slideImg {position: relative;}
+.slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 25px; padding: 20px 30px; background-color: rgba(0,0,0,0.5); color: #ffffff; text-align: center;}
+.slideImg img {display: block;}
+
+.contents {width:1200px; height: 200px;}
+
+/* 공지사항 */
+.contents .notice {float: left; width:33.3333%; height: 200px;}
+.notice .noticeBtn {width: 80px; background-color: peru; padding: 10px; text-align: center; font-size: 17px; font-weight: bold; margin-left: 20px; margin-top: 10px;}
+.notice .noticeContList {width: 360px; padding: 10px; background-color: peachpuff;  margin-left: 10px;}
+.noticeCont h4 {float: left; font-size: 13px; margin-bottom: 3px;}
+.noticeCont p {float: right; font-size: 11px;}
+
+/* 갤러리 */
+.contents .gallery {float: left; width:33.3333%; height: 200px;}
+.gallery .galleryBtn {width: 80px; background-color: peru; padding: 10px; text-align: center; font-size: 17px; font-weight: bold; margin-left: 20px; margin-top: 10px;}
+.gallery .galleryContList {width: 360px; padding: 10px; background-color: peachpuff;}
+.gallery .galleryContList img {padding: 10px; margin-top: 2px; display: block; float:left; }
+
+/* 바로가기 */
+.contents .baro {float: left; width:33.3333%; height: 200px;}
+.contents .baro img {display: block; float: left; padding: 15px; margin-top: 30px;}
+
+/* footer */
+#footer {width: 1200px; height: 100px; margin: 0 auto;}
+#footer .foot1 {float: left; width: 1000px; height: 100px; text-align: left;}
+
+/* copyright */
+.foot1 p.info {padding: 10px; font-size: 15px;}
+.foot1 p.mark {text-align: center; padding: 10px; font-size: 20px;}
+
+
+#footer .foot2 {float: left; width: 200px; height: 100px;}
+
+/* sns */
+#footer .foot2 .sns {width: 100%; height: 50%;}
+#footer .foot2 .sns img {display: block; float: left; padding: 10px; margin-left: 15px }
+#footer .foot2 .family {width: 100%; height: 50%;}
+
+/* 패밀리사이트 */
+#footer .foot2 .family select {margin: 20px}
+
+/* popup layer */
 .layer-bg {position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color:rgba(0,0,0,0.5); display: none; z-index: 500;}
+.layer {position: absolute; width: 500px; height: 500px; border: 1px solid; background-color: #ffffff; left: 50%; top: 50%; transform: translate(-50%, -50%);  z-index: 1000; display: none;}
+.layer h2 {padding: 10px; font-size: 18px;}
+.layer p {padding: 10px; font-size: 16px;}
+.layer .close {position: absolute; right: 20px; bottom: 20px; font-size: 20px;}

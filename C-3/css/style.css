@@ -1,0 +1,24 @@
+@charset 'utf-8';
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #fff;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1000px; height: 650px; background-color: #ffffff; color: #333333;}
+#side {float: left; width: 200px; height: 650px;}
+#side .logo {width: 200px; height: 100px; background-color: #999;}
+#side .nav {width: 200px; height: 550px; background-color: #777;}
+
+#main {float: left; width: 800px; height: 650px; background-color: #888;}
+.slide {width: 800px; height: 350px; background-color: aqua;}
+
+.contents {width: 800px; height: 200px;}
+.contents .notice {float: left; width: 33.3333%; height: 200px; background-color: #111;}
+.contents .gallery {float: left; width: 33.3333%; height: 200px; background-color: #222;}
+.contents .banner {float: left; width: 33.3333%; height: 200px; background-color: #333;}
+
+.footer {width: 800px; height: 100px; background-color: red;}
+.footer .foot1 {float: left; width: 200px; height: 100px; background-color: blue;}
+.footer .foot2 {float: left; width: 600px; height: 100px;}
+.footer .foot2 .bottom-menu {width: 100%; height: 50%; background-color: #555;}
+.footer .foot2 .copyright {width: 100%; height: 50%; background-color: #666;}
