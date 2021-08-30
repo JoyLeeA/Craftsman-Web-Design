@@ -3,39 +3,169 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/style.css">
-        <srcipt src="./script/jquery-3.6.0.min.js"></srcipt>
-        <script src="./script/script.js"></script>
+        <script src="script/jquery-3.6.0.min.js"></script>
+        <script src="script/script.js"></script>
         <title>남도맛기행 축제</title>
     </head>
     <body>
         <div id="wrap" class="clearfix">
             <aside id="side">
-                <h1 class="logo">로고</h1>
-                <nav class="nav">네비게이션</nav>
+                <h1 class="logo">
+                    <a href="#"><img src="./images/logo1.jpg" alt="남도 맛 기행 축제"></a>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">축제개요</a></li>
+                                <li><a href="#">축제연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>    
+                        <li>    
+                            <a href="#">행사안내</a>
+                            <ul class="submenu">
+                                <li><a href="#">셔틀버스안내</a></li>
+                                <li><a href="#">행사안내</a></li>
+                                <li><a href="#">행사일정</a></li>
+                                <li><a href="#">소공연장</a></li>
+                            </ul>
+                        </li>    
+                        <li>    
+                            <a href="#">홍보마당</a>
+                            <ul class="submenu">
+                                <li><a href="#">축제소식</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">음식레시피</a></li>
+                            </ul>
+                        </li>    
+                        <li>    
+                            <a href="#">참여마당</a>
+                            <ul class="submenu">
+                                <li><a href="#">참가후기</a></li>
+                                <li><a href="#">연꽃갤러리</a></li>
+                                <li><a href="#">포토갤러리</a></li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </nav>
             </aside>
             <div id="main">
                 <section class="slide">
-                    이미지슬라이드
+                    <div class="slideList">
+                        <div class="slideImg">
+                            <h2>남도 음식의 향연<br>
+                                명인들의 맛을 만나다.<br>
+                                남도 명인전</h2>
+                            <img src="./images/slide1.jpg" alt="요리">
+                        </div>
+                        <div class="slideImg">
+                            <h2>미래를 열어가는 남도의 맛!<br>
+                                「남도음식 경연, 청년부 대회」<br>
+                                ○ 일 시 : ’19. 10. 13.(일) 10:00 ˜ 12:30<br>
+                                ○ 장 소 : 강진만 생태공원 축제장내</h2>
+                            <img src="./images/slide2.jpg" alt="푸트코트">
+                        </div>
+                        <div class="slideImg">
+                            <h2>2019 南道 가을 맛 기행단<br>
+                                여수, 순천, 보성, 목포, 광주의 음식 명인들을 만나다.<br>
+                                    2019.10.18(금) - 10.20(일), 2박 3일 일정<br>
+                            </h2>
+                            <img src="./images/slide3.jpg" alt="푸트트럭">
+                        </div>                        
+                    </div>
                 </section>
                 <section class="contents">
                     <div class="notice">
-                        공지사항
+                        <div class="notice-btn">
+                            <a href="#">공지사항</a>
+                        </div>
+                        <div class="notice-cont">
+                            <div class="cont clearfix popup"><a href="#">
+                                <h4>제26회 남도 맛기행 축제 남도음식 경연대...</h4>
+                                <p>2019-09-10</p>
+                            </a></div>
+                        </div>
+                        <div class="notice-cont">
+                            <div class="cont clearfix"><a href="#">
+                                <h4>제26회 남도 맛기행 축제 photo</h4>
+                                <p>2019-09-09</p>
+                            </a></div>
+                        </div>
+                        <div class="notice-cont">
+                            <div class="cont clearfix"><a href="#">
+                                <h4>제26회 남도 맛기행 축제 행사기간</h4>
+                                <p>2019-09-09</p>
+                            </a></div>
+                        </div>
+                        <div class="notice-cont">
+                            <div class="cont clearfix"><a href="#">
+                                <h4>제26회 남도 맛기행 축제 리플렛 (재)남도...</h4>
+                                <p>2019-08-02</p>
+                            </a></div>
+                        </div>
+                        <div class="notice-cont clearfix">
+                            <div class="cont"><a href="#">
+                                <h4>연간 기부금 모금액 및 활용실적 명세서(2018)</h4>
+                                <p>2018-10-17</p>
+                            </a></div>
+                        </div>                        
                     </div>
                     <div class="gallery">
-                        갤러리
+                        <div class="gallery-btn">
+                            <a href="#">갤러리</a>
+                        </div>
+                        <div class="gallery-cont clearfix">
+                            <a href="#"><img src="./images/gallery1.jpg" alt="상차림"></a>
+                            <a href="#"><img src="./images/gallery2.jpg" alt="상차림2"></a>
+                            <a href="#"><img src="./images/gallery3.jpg" alt="상차림3"></a>
+                        </div>
                     </div>
                     <div class="banner">
-                        배너
+                        <img src="./images/banner.jpg" alt="남도 막걸리 여행">
                     </div>
                 </section>
                 <footer class="footer">
-                    <div class="foot1">로고</div>
+                    <div class="foot1">
+                        <img src="./images/logo2.jpg" alt="남도 맛 기행 축제">
+                    </div>
                     <div class="foot2">
-                        <div class="bottom-menu">하단메뉴</div>
-                        <div class="copyright">Copyright</div>
+                        <div class="bottom-menu">
+                            <ul>
+                                <li><a href="#">월별 테마 맛기행</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <h4>(재)남도맛기행축제 | 주소 : 광주광역시 남구 대남대로 478 | Tel. 062-456-6789 | fax. 062-456-6780 | <br>개인정보관리자 : 홍길동 gdhong@namdofood.or.kr</h4>
+                            <p>이 사이트의 모든 콘텐츠는 무단전제 및 복제, 재배포가 금지되어 있습니다.</p>
+                        </div>
                     </div>
                 </footer>
             </div>
+        </div>
+        <div class="layer-bg"></div>
+        <div class="layer">
+            <h2>제목 : 제26회 남도 맛기행 축제 남도음식 경연대회(청년부) 공고</h2>
+            <hr>
+            <p> 
+            남도음식의 우수성을 알리고 공유하기 위한 「제26회 남도 맛기행 축제」남도음식경연대회를 개최하오니 많은 참여와 관심 부탁드립니다.<br>
+            <br>    
+            (재)남도 맛기행 축제 이사장<br>
+            <br>    
+            1. 대회 개요<br>
+            <br>    
+            ○ 일 시 : ’19. 10. 13.(일) 10:00 ˜ 12:30<br>
+            ○ 장 소 : 강진만 생태공원 축제장내<br>
+            ○ 참가자격 : 전국 고등학생 및 대학생 / ※ 참가팀은 1~2명으로 구성 (3인 이상은 불가)<br>
+            ○ 참가팀 선정 : 서류 심사 후 20개팀 선정<br>
+            <br>
+            - 더욱 자세한 사항은 첨부파일을 참조 하시기 바랍니다. 감사합니다.
+            </p>
+            <div class="close"><a href="#">닫기</a></div>
         </div>
     </body>
 
