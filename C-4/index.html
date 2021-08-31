@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/style.css">
@@ -10,36 +10,129 @@
     <body>
         <div id="wrap">
             <aside id="side">
-                <h1 class="logo">로고</h1>
-                <nav class="nav">네비게이션</nav>
+                <h1 class="logo">
+                    <img src="./images/logo1.jpg" alt="Valley Rock Festival">
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">Festival소개</a></li>
+                                <li><a href="#">행사장 안내</a></li>
+                                <li><a href="#">조직위원회</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">예약안내</a>
+                            <ul class="submenu">
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">예약확인/취소</a></li>
+                                <li><a href="#">단체예약문의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">아티스트</a>
+                            <ul class="submenu">
+                                <li><a href="#">고릴라즈</a></li>
+                                <li><a href="#">메이저 레이저</a></li>
+                                <li><a href="#">아우스게인</a></li>
+                                <li><a href="#">타임로드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">사진갤러리</a></li>
+                                <li><a href="#">영상갤러리</a></li>
+                            </ul>
+                        </li>                         
+                    </ul>
+                </nav>
             </aside>
             <div id="main">
                 <section class="slide">
-                    이미지슬라이드
+                    <div class="slideList clearfix">
+                        <div class="slideImg">
+                            <h2>이미지1</h2>
+                            <img src="./images/slide01.jpg" alt="밤콘서트">
+                        </div>
+                        <div class="slideImg">
+                            <h2>이미지2</h2>
+                            <img src="./images/slide02.jpg" alt="정문">
+                        </div>
+                        <div class="slideImg">
+                            <h2>이미지3</h2>
+                            <img src="./images/slide03.jpg" alt="낮콘서트">
+                        </div>
+                    </div>
                 </section>
-                <section class="contents">
+                <section class="contents clearfix">
                     <div class="notice">
-                        공지사항
+                        <div class="notice-btn">
+                            공지사항
+                        </div>
+                        <div class="notice-cont">
+                            <div class="cont clearfix popup"><a href="#">
+                                <h4>내용</h4>
+                                <p>날짜</p>
+                            </a></div>
+                            <div class="cont clearfix"><a href="#">
+                                <h4>내용</h4>
+                                <p>날짜</p>
+                            </a></div>
+                            <div class="cont clearfix"><a href="#">
+                                <h4>내용</h4>
+                                <p>날짜</p>
+                            </a></div>
+                            <div class="cont clearfix"><a href="#">
+                                <h4>내용</h4>
+                                <p>날짜</p>
+                            </a></div>
+                            <div class="cont clearfix"><a href="#">
+                                <h4>내용</h4>
+                                <p>날짜</p>
+                            </a></div>           
+                        </div>
                     </div>
                     <div class="gallery">
-                        갤러리
+                       <div class="gallery-btn">
+                           갤러리
+                       </div>
+                       <div class="galleryList clearfix">
+                            <a href="#"><img src="./images/gallery1.jpg" alt="환호하는 관객"></a>
+                            <a href="#"><img src="./images/gallery2.jpg" alt="즐기는 관객"></a>
+                            <a href="#"><img src="./images/gallery3.jpg" alt="소리치는 관객"></a>
+                        </div>
                     </div>
-                    <div class="baro">
-                        바로가기
+                    <div class="baro clearfix">
+                        <a href="#"><img src="./images/baro1.jpg" alt="티켓예매"></a>
+                        <a href="#"><img src="./images/baro2.jpg" alt="공연캘린더"></a>
+                        <a href="#"><img src="./images/baro3.jpg" alt="공연영상"></a>
                     </div>
                 </section>
-                <footer class="footer">
+                <footer class="footer clearfix">
                     <div class="logo">
-                        로고
+                        <img src="./images/logo2.jpg" alt="Vallery Rock Festival">
                     </div>
                     <div class="copyright">
-                        Copyright
+                        Vallery Rock Festival 위원회 | 서울특별시 용산구 한강대로 32 3F, 인디뮤직 | TEL : 02-456-7892, 3 | FAX : 02-456-7895 | 행사담당 : 김요한 produce@indim.co.kr<br>
+                        Copyright All right reserved by INDI M.Co.Ltd
                     </div>
                     <div class="family">
-                        패밀리사이트
+                        <select name="family site">
+                            <option>패밀리사이트</option>
+                            <option>▶인터파크</option>     
+                            <option>▶옥션티켓</option>
+                            <option>▶티켓링크</option> 
+                        </select>
                     </div>
                 </footer>
             </div>
+            <div class="layer">
+                <h2>타이틀</h2>
+                <hr>
+                <p>내용</p>
+                <div class="close"><a href="#">닫기</a></div>
+            </div>
         </div>
+    <div class="layer-bg"></div>
     </body>
 </html>
